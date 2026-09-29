@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    ports: ["127.0.0.1:${PORT:-3001}:8000"]
+    environment:
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-change-me-before-deploying}
+      DATABASE_PATH: /data/save-the-date.sqlite
+    volumes: ["save-the-date-data:/data"]
+volumes:
+  save-the-date-data:

@@ -1,0 +1,14 @@
+{
+  "name": "daisy-ed-save-the-date",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=22.0.0" },
+  "workspaces": ["frontend"],
+  "scripts": {
+    "dev": "node scripts/runtime.mjs dev",
+    "build": "node scripts/runtime.mjs build && node scripts/runtime.mjs vite-build",
+    "start": "node scripts/runtime.mjs start",
+    "check": "node scripts/runtime.mjs build",
+    "test": "backend/.venv/bin/python -m pytest backend/tests -q"
+  }
+}
