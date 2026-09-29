@@ -172,6 +172,11 @@ body {
   line-height: .82;
 }
 
+.invitation-main > h2 {
+  position: relative;
+  left: -.16em;
+}
+
 .main-card .script {
   position: absolute;
   z-index: 2;
@@ -275,6 +280,77 @@ body {
   background: #554f4588;
 }
 
+.attendance-field {
+  margin: 0 0 32px;
+  padding: 0;
+  border: 0;
+}
+
+.attendance-field legend {
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  font-size: .75rem;
+}
+
+.attendance-note {
+  margin: 0 0 15px;
+  color: #f4e7d7b8;
+  font-size: .78rem;
+  line-height: 1.45;
+}
+
+.attendance-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.details .attendance-options label {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 58px;
+  margin: 0;
+  border: 1px solid #f4e7d75e;
+  background: #7c131044;
+  cursor: pointer;
+  transition: background .2s, color .2s, border-color .2s;
+}
+
+.attendance-options label:hover,
+.attendance-options label.selected {
+  border-color: var(--cream);
+  background: var(--cream);
+  color: var(--red);
+}
+
+.attendance-options input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  opacity: 0;
+}
+
+.attendance-options span {
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  font-size: .65rem;
+  line-height: 1.35;
+}
+
+.conditional-fields {
+  animation: reveal-fields .35s ease both;
+}
+
+@keyframes reveal-fields {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: none; }
+}
+
 .flower {
   right: 0;
   bottom: -17px;
@@ -309,6 +385,14 @@ body {
   .booth { width: clamp(238px, 52vw, 282px); }
   .booth-mouth { height: clamp(385px, 82vw, 455px); }
   .strip { animation-name: develop-strip-mobile; }
+
+  .attendance-options {
+    grid-template-columns: 1fr;
+  }
+
+  .details .attendance-options label {
+    min-height: 48px;
+  }
 }
 
 @keyframes develop-strip-mobile {
