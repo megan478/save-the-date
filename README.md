@@ -1,4 +1,4 @@
-# Daisy & Ed — Save the Date
+# Daisy & Edward — Save the Date
 
 A web-only animated save-the-date experience with a photo-booth reveal, invitation view, countdown, contact section, and an address form backed by FastAPI and SQLite.
 

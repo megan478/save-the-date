@@ -86,7 +86,7 @@ async def lifespan(_: FastAPI):
     initialize()
     yield
 
-app = FastAPI(title='Daisy & Ed Save the Date', docs_url='/api/docs', lifespan=lifespan)
+app = FastAPI(title='Daisy & Edward Save the Date', docs_url='/api/docs', lifespan=lifespan)
 
 @app.get('/api/health')
 def health():
