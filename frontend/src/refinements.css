@@ -431,6 +431,12 @@ body {
   }
 }
 
+@media (max-width: 420px) {
+  .invitation-main > h2 {
+    margin-top: 28px;
+  }
+}
+
 @keyframes develop-strip-mobile {
   0% { transform: translateY(-100%); }
   74% { transform: translateY(6px); animation-timing-function: steps(20, end); }

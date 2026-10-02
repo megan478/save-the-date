@@ -6,5 +6,5 @@ export const wedding = {
   venue: 'Ravello',
   location: 'Ravello, Italy',
   email: 'jingweddingplanning@gmail.com',
-  replyBy: 'June 28, 2027'
+  replyBy: 'November 1, 2026'
 };
