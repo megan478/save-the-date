@@ -273,6 +273,12 @@ body {
   white-space: nowrap;
 }
 
+.postcard-stamp img {
+  width: 68%;
+  height: 68%;
+  object-fit: contain;
+}
+
 .postcard-address i {
   display: block;
   height: 1px;
