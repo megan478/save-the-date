@@ -33,10 +33,11 @@ body {
 .cover h1 {
   font-size: clamp(6.1rem, 11.5vw, 8.2rem);
   line-height: .76;
-  margin: 0 0 31px;
+  margin-top: .46em;
+  margin-bottom: 31px;
   white-space: nowrap;
   transform: none;
-  text-shadow: 0 1px 10px #31000066;
+  text-shadow: 0 1.5px 0 rgba(0,0,0,.5), 0 -1.5px 0 rgba(255,255,255,.35);
 }
 
 .cover h2 {
@@ -45,6 +46,7 @@ body {
   margin: 14px 0 10px;
   white-space: nowrap;
   transform: none;
+  text-shadow: 0 1.5px 0 rgba(0,0,0,.5), 0 -1.5px 0 rgba(255,255,255,.35);
 }
 
 .date,
