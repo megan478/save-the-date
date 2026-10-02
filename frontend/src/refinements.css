@@ -383,14 +383,44 @@ body {
   }
 
   .cover h1 {
-    font-size: clamp(5.3rem, 17vw, 6rem);
+    font-size: clamp(2.6rem, calc((100vw - 40px) / 6.6), 5.3rem);
     margin-bottom: 31px;
   }
 
-  .cover h2 { font-size: clamp(5rem, 16vw, 5.7rem); }
+  .cover h2 { font-size: clamp(3rem, calc((100vw - 40px) / 5.1), 5.7rem); }
   .booth { width: clamp(238px, 52vw, 282px); }
   .booth-mouth { height: clamp(385px, 82vw, 455px); }
   .strip { animation-name: develop-strip-mobile; }
+
+  .main-card .script {
+    font-size: 3.2rem;
+  }
+
+  .note-card {
+    padding: 20px 16px 20px 14px;
+  }
+
+  .note-card .postcard-copy small {
+    font-size: .3rem;
+  }
+
+  .note-card .postcard-copy strong {
+    font-size: .38rem;
+  }
+
+  .note-card .postcard-copy .script {
+    font-size: 1.25rem;
+    margin-top: 8px;
+  }
+
+  .mini-strip {
+    top: 200px;
+    width: clamp(40px, 14vw, 56px);
+  }
+
+  .flower {
+    bottom: -80px;
+  }
 
   .attendance-options {
     grid-template-columns: 1fr;
