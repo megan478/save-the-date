@@ -5,6 +5,6 @@ export const wedding = {
   dateISO: '2027-07-28T17:00:00-04:00',
   venue: 'Ravello',
   location: 'Ravello, Italy',
-  email: 'placeholder@gmail.com',
+  email: 'jingweddingplanning@gmail.com',
   replyBy: 'June 28, 2027'
 };
