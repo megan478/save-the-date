@@ -32,18 +32,21 @@ body {
 
 .cover h1 {
   font-size: clamp(6.1rem, 11.5vw, 8.2rem);
-  line-height: .76;
-  margin-top: .46em;
-  margin-bottom: 31px;
+  line-height: 1;
+  margin-top: .2em;
+  margin-bottom: 14px;
+  padding: .12em .22em;
   white-space: nowrap;
-  transform: none;
+  transform: scaleX(.95);
+  transform-origin: center;
   text-shadow: 0 1.5px 0 rgba(0,0,0,.5), 0 -1.5px 0 rgba(255,255,255,.35);
 }
 
 .cover h2 {
   font-size: clamp(5.7rem, 10.5vw, 7.5rem);
-  line-height: .76;
-  margin: 14px 0 10px;
+  line-height: 1;
+  margin: 0 0 -2px;
+  padding: .12em .22em;
   white-space: nowrap;
   transform: none;
   text-shadow: 0 1.5px 0 rgba(0,0,0,.5), 0 -1.5px 0 rgba(255,255,255,.35);
@@ -385,8 +388,9 @@ body {
   }
 
   .cover h1 {
-    font-size: clamp(2.6rem, calc((100vw - 40px) / 6.6), 5.3rem);
+    font-size: clamp(2.5rem, calc((100vw - 76px) / 6.6), 5.3rem);
     margin-bottom: 31px;
+    transform: none;
   }
 
   .cover h2 { font-size: clamp(3rem, calc((100vw - 40px) / 5.1), 5.7rem); }
