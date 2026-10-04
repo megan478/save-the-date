@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//tmp/pw-shot/**)",
+      "Read(//private/tmp/pw-shot/**)"
+    ]
+  }
+}

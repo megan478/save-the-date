@@ -26,25 +26,30 @@ body {
 }
 
 .cover header p {
-  margin-bottom: 18px;
+  margin-bottom: 32px;
   font-size: clamp(.72rem, 1.15vw, .9rem);
 }
 
 .cover h1 {
   font-size: clamp(6.1rem, 11.5vw, 8.2rem);
-  line-height: .76;
-  margin: 0 0 31px;
+  line-height: 1;
+  margin-top: .2em;
+  margin-bottom: 14px;
+  padding: .12em .22em;
   white-space: nowrap;
-  transform: none;
-  text-shadow: 0 1px 10px #31000066;
+  transform: scaleX(.95);
+  transform-origin: center;
+  text-shadow: 0 1.5px 0 rgba(0,0,0,.5), 0 -1.5px 0 rgba(255,255,255,.35);
 }
 
 .cover h2 {
   font-size: clamp(5.7rem, 10.5vw, 7.5rem);
-  line-height: .76;
-  margin: 14px 0 10px;
+  line-height: 1;
+  margin: 0 0 -2px;
+  padding: .12em .22em;
   white-space: nowrap;
   transform: none;
+  text-shadow: 0 1.5px 0 rgba(0,0,0,.5), 0 -1.5px 0 rgba(255,255,255,.35);
 }
 
 .date,
@@ -164,7 +169,7 @@ body {
   100% { transform: translateY(89px); }
 }
 
-.cover-copy { margin-top: 15px; }
+.cover-copy { margin-top: 42px; }
 
 .invitation-main > h2,
 .details > h2,
@@ -273,6 +278,12 @@ body {
   white-space: nowrap;
 }
 
+.postcard-stamp img {
+  width: 68%;
+  height: 68%;
+  object-fit: contain;
+}
+
 .postcard-address i {
   display: block;
   height: 1px;
@@ -377,14 +388,45 @@ body {
   }
 
   .cover h1 {
-    font-size: clamp(5.3rem, 17vw, 6rem);
+    font-size: clamp(2.5rem, calc((100vw - 76px) / 6.6), 5.3rem);
     margin-bottom: 31px;
+    transform: none;
   }
 
-  .cover h2 { font-size: clamp(5rem, 16vw, 5.7rem); }
+  .cover h2 { font-size: clamp(3rem, calc((100vw - 40px) / 5.1), 5.7rem); }
   .booth { width: clamp(238px, 52vw, 282px); }
   .booth-mouth { height: clamp(385px, 82vw, 455px); }
   .strip { animation-name: develop-strip-mobile; }
+
+  .main-card .script {
+    font-size: 3.2rem;
+  }
+
+  .note-card {
+    padding: 20px 16px 20px 14px;
+  }
+
+  .note-card .postcard-copy small {
+    font-size: .3rem;
+  }
+
+  .note-card .postcard-copy strong {
+    font-size: .38rem;
+  }
+
+  .note-card .postcard-copy .script {
+    font-size: 1.25rem;
+    margin-top: 8px;
+  }
+
+  .mini-strip {
+    top: 200px;
+    width: clamp(40px, 14vw, 56px);
+  }
+
+  .flower {
+    bottom: -80px;
+  }
 
   .attendance-options {
     grid-template-columns: 1fr;
@@ -392,6 +434,12 @@ body {
 
   .details .attendance-options label {
     min-height: 48px;
+  }
+}
+
+@media (max-width: 420px) {
+  .invitation-main > h2 {
+    margin-top: 28px;
   }
 }
 
